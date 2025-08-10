@@ -1,3 +1,25 @@
+/* Reduce left padding for bullet points in Join section */
+#join ul {
+    padding-left: 1.2em;
+}
+@media (max-width: 768px) {
+    #join ul {
+        padding-left: 0.8em;
+    }
+}
+/* Contact Section Responsive Alignment */
+@media (max-width: 768px) {
+    #contact .card > div[style*="display: grid"] {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 1.2em !important;
+    }
+    #contact .card > div[style*="display: grid"] > div {
+        width: 100%;
+        text-align: center;
+    }
+}
 body {
     font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
 /* About Section Text Justification */
