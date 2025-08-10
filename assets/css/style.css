@@ -671,6 +671,17 @@ footer p {
 
 .slide-in-left {
     animation: slideInLeft 0.8s ease-out;
+        /* Better text alignment for mobile */
+        .section h2,
+        .card-about h3,
+        .feature-card h3 {
+            text-align: center;
+        }
+        .about-block p,
+        .features-grid p {
+            text-align: left;
+            text-justify: inter-word;
+        }
 }
 
 @keyframes slideInLeft {
