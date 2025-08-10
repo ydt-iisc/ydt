@@ -289,12 +289,29 @@ header h1 {
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100px;
-    height: 3px;
-    background: linear-gradient(135deg, #00B4DB, #8A2BE2, #FF6B35);
-    border-radius: 2px;
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    border-radius: 0;
+    max-height: 260px;
+    min-height: 160px;
+    display: block;
 }
 
+.card-image {
+    position: relative;
+    min-width: 160px;
+    max-width: 420px;
+    flex: 1 1 420px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+    overflow: hidden;
+    max-height: 260px;
+}
 /* Gallery Styles */
 .gallery {
     display: grid;
@@ -570,22 +587,53 @@ footer p {
         order: 2;
     }
     
-    .club-image {
-        order: 1;
+    .card-image {
+        border-radius: 18px 18px 0 0;
+        min-width: 100%;
+        max-width: 100%;
+        max-height: 180px;
     }
-    
-    .container {
-        padding: 1em;
+    .card-image img {
+        aspect-ratio: 16/9;
+        max-height: 180px;
+        border-radius: 18px 18px 0 0;
     }
-    
-    .section h2 {
-        font-size: 2em;
     }
 }
 
 /* Animation Classes */
 .fade-in {
     animation: fadeIn 0.8s ease-in;
+}
+
+/* Performance Navigation Buttons */
+.performance-nav {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    margin: 1.5em 0 2em 0;
+}
+
+.btn-perf-nav {
+    display: inline-block;
+    padding: 0.7em 1.6em;
+    font-size: 1em;
+    font-weight: 600;
+    color: #fff;
+    background: linear-gradient(135deg, #8A2BE2, #00B4DB);
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 16px rgba(138,43,226,0.12);
+    transition: background 0.3s, transform 0.2s;
+    letter-spacing: 1px;
+}
+
+.btn-perf-nav:hover {
+    background: linear-gradient(135deg, #00B4DB, #8A2BE2);
+    color: #FFD23F;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 24px rgba(0,180,219,0.18);
 }
 
 @keyframes fadeIn {
