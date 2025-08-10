@@ -1,5 +1,13 @@
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+/* About Section Text Justification */
+.about-block p {
+    text-align: justify;
+}
+/* Activities Section Text Justification */
+.features-grid p {
+    text-align: justify;
+}
     margin: 0;
     background-color: #ffffff;
     color: #333;
