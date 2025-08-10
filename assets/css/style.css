@@ -1,3 +1,7 @@
+.about-block p {
+    text-align: justify;
+    text-justify: inter-word;
+}
 /* Reduce left padding for bullet points in Join section */
 #join ul {
     padding-left: 1.2em;
