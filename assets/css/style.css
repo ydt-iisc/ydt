@@ -303,6 +303,56 @@ header h1 {
     margin: 2em 0;
 }
 
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2em;
+}
+
+.gallery-item.video {
+    background: linear-gradient(135deg, #8A2BE2 10%, #00B4DB 90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(138,43,226,0.1);
+}
+
+.gallery-item.audio {
+    background: linear-gradient(135deg, #FFD23F 10%, #FF6B35 90%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(255,107,53,0.1);
+}
+
+.gallery-item.video h2,
+.gallery-item.audio h2 {
+    color: #fff;
+    margin-bottom: 0.5em;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+}
+
+.gallery-item.video iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    width: 100%;
+    max-width: 400px;
+    height: 225px;
+}
+
+.gallery-item.audio audio {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 0.5em;
+}
+
 .gallery-item {
     position: relative;
     border-radius: 15px;
