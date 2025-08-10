@@ -85,8 +85,9 @@
   .perf-card {
     border-radius: 16px;
   }
-  .perf-img-container {
-    height: 120px;
+    .perf-img-container {
+      height: 120px;
+      aspect-ratio: 16/7;
   }
   .perf-content {
     padding: 0.8em 1em 1em 1em;
