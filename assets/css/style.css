@@ -498,6 +498,14 @@ footer p {
 
 /* Mobile Styles */
 @media (max-width: 768px) {
+    .gallery-item.video,
+    .gallery-item.audio {
+        margin-left: 0 !important;
+        padding: 1em !important;
+        width: 100% !important;
+        box-sizing: border-box;
+        display: block;
+    }
     .menu-toggle {
         display: flex;
     }
