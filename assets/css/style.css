@@ -558,7 +558,9 @@ footer p {
 
             .gallery-item.video,
             .gallery-item.audio {
-                padding: 0.5em;
+                padding: 1em;
+                box-sizing: border-box;
+                width: 100%;
             }
         margin: 0.5em 0;
         padding: 1em;
@@ -599,7 +601,7 @@ footer p {
         border-radius: 18px 18px 0 0;
     }
     }
-}
+
 
 /* Animation Classes */
 .fade-in {
