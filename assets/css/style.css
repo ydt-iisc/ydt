@@ -500,9 +500,13 @@ footer p {
 @media (max-width: 768px) {
     .gallery-item.video,
     .gallery-item.audio {
-        margin-left: 0 !important;
+        margin: 0 !important;
         padding: 1em !important;
-        width: 100% !important;
+        width: 100vw !important;
+        max-width: 100vw !important;
+        left: 50%;
+        right: 50%;
+        transform: translateX(-50%);
         box-sizing: border-box;
         display: block;
     }
