@@ -1,4 +1,4 @@
-.about-block p {
+section#about .about-block p {
     text-align: justify;
     text-justify: inter-word;
 }
